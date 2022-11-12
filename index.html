@@ -1,1 +1,92 @@
-<h1>Hello</h1>
+<!doctype html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital@1&family=Montserrat:wght@500;700&family=Play:wght@700&family=Playfair+Display:ital@1&family=Spectral:ital,wght@1,300&family=Unna:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mystyles.css">
+  <title>CS4241 Assignment 1</title>
+  <meta charset="utf-8">
+</head>
+<body>
+    <img src="happysmiley.png" id="smiley" alt="Girl in a jacket" style="visibility: hidden; width:40px;height:40px; top: 220px; left:700px;; position:absolute; transform: rotate(10deg)">
+    <img src="peace.png" id="peace" alt="Girl in a jacket" style="visibility: hidden; width:35px;height:50px; top:200px; left:470px; position:absolute; transform: rotate(-15deg)">
+    <img src="star.png" id="star" alt="Girl in a jacket" style="visibility: hidden; width:30px;height:30px; top: 270px; left: 355px; position:absolute;">
+    <img src="smallstar.png" id="smallstar" alt="Girl in a jacket" style="visibility: hidden; width:30px;height:30px; top: 220px; left:600px; position:absolute;">
+    <div class="topnav">
+        <nav>
+            <div class="heading">
+              <h4>neha kuchipudi</h4>
+            </div>
+            <ul class="nav-links">
+              <li><a class="active" href="index.html">work</a></li>
+              <li><a href="play.html">play</a></li>
+              <li><a href="about.html">about</a></li>
+              <li><a href="Neha_Kuchipudi_Resume(2022) (1).pdf">resume</a></li>
+            </ul>
+          </nav>
+    </div>
+  <div class="container">
+    <h1 id="greeting" onmouseover="changeText()" onmouseout="changeback()">hi, i'm neha ☺✽</h1>
+    <script type="text/javascript">
+      function changeText() {
+        var display = document.getElementById('greeting');
+        var smiley = document.getElementById('smiley');
+        var peace = document.getElementById('peace');
+        var star = document.getElementById('star');
+        var smallstar = document.getElementById('smallstar');
+        smiley.style.visibility = 'visible';
+        peace.style.visibility = 'visible';
+        star.style.visibility = 'visible';
+        smallstar.style.visibility = 'visible';
+        greeting.style.fontSize = '50px';
+        greeting.style.letterSpacing = '-2px';
+        greeting.style.fontFamily = 'Unna', serif;
+      }
+      function changeback() {
+        var display = document.getElementById('greeting');
+        var smiley = document.getElementById('smiley');
+        var peace = document.getElementById('peace');
+        smiley.style.visibility = 'hidden';
+        peace.style.visibility = 'hidden';
+        star.style.visibility = 'hidden';
+        smallstar.style.visibility = 'hidden';
+        greeting.style.fontSize = '50px';
+        greeting.style.letterSpacing = '0px';
+        greeting.style.fontFamily = 'Play', sans - serif;
+      }
+    </script>
+    <p> I'm a Boston based UX Designer, currently designing and developing web and mobile experiences @ WPI IDeaS.
+    </p>
+    <button id="linkedin" onclick="window.location.href='https://www.linkedin.com/in/nehakuch/';">connect on linkedIn  →
+    </button>
+  </div>
+  <div class="projects">
+    <button id="project">
+        <div id="project1">
+        </div>
+        <br>
+        <p2>
+            Project 1
+        </p2>
+        <br>
+        <p3>
+            Project 1 Description
+        </p3>
+    </button>
+    <button id="project">
+        <div id="project1">
+        </div>
+        <br>
+        <p2>
+            Project 2
+        </p2>
+        <br>
+        <p3>
+            Project 2 Description
+        </p3>
+    </button>
+  </div>
+  <div class="footer">
+    <p>made with ♥ by neha</p>
+  </div>
+</body>
+</html>
