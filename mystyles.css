@@ -126,6 +126,16 @@ nav {
   box-shadow:2px 2px;
 }
 
+#project2{
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+  width: 575px;
+  height: 700px;
+  border-color:transparent;
+  border-radius: 20px;
+  box-shadow:2px 2px;
+  margin-left:20px;
+}
+
 
 #project{
   background-color:transparent;
